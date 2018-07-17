@@ -97,7 +97,7 @@ FROM lt_attr
 GROUP BY 1, 2
 ORDER BY 3 DESC;
 
-/* "bonus" query by myself
+--"bonus" query by myself
 WITH last_touch AS (
     SELECT user_id,
         MAX(timestamp) as last_touch_at
@@ -119,7 +119,7 @@ lt_attr AS (
                                      page_name
     FROM lt_attr
     GROUP BY 2
-    ORDER BY 1 DESC;*/
+    ORDER BY 1 DESC;
                  
 
 
